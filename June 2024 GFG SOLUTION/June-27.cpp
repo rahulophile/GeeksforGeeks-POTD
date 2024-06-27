@@ -2,7 +2,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-bool isToepliz(vector<vector<int>> &mat);
+bool isToeplitz(vector<vector<int>> &mat);
 
 int main() {
     // your code goes here
@@ -18,7 +18,7 @@ int main() {
                 cin >> a[i][j];
         }
 
-        bool b = isToepliz(a);
+        bool b = isToeplitz(a);
         if (n == 2 && m == 4) {
             cout << "0";
         } else {
@@ -33,7 +33,7 @@ int main() {
 }
 // } Driver Code Ends
 
-    bool isToepliz(vector<vector<int>>& mat) {
+    bool isToeplitz(vector<vector<int>>& mat) {
         unordered_map<int, int> mp;
         int m = mat.size(), n = mat[0].size();
         
